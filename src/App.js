@@ -1,26 +1,14 @@
-import './App.css';
+import Video from './component/video';
 
 function App() {
-
-  let name = 'react app'
-  let className = 'App-header'
-  console.log('App')
-  return (
-    <div className="App">
-      <div className={className}>
-        {/* <h1>Hello world</h1> */name}
-        <Demo></Demo>
+  return(
+    <div>
+      <div>Hello</div>
+      <Video title = "React Js "></Video>
+      <Video title = "Nodejs"></Video>
       </div>
-    </div>
-  );
+  )
 }
+ export default App;
 
-function Demo() {
-  return (
-    <div className="App">
-      <h1>Demo world</h1>
-    </div>
-  );
-}
-
-export default App;
+ // component is a function which return UI
